@@ -1,0 +1,84 @@
+/*RESET*/
+html, body, h1, figure, ul, li {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+
+  text-decoration: inherit;
+  font: bold 48px sans-serif;
+  text-align: center;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.towers_game{
+  transform: scaleY(-1) translateY(-200px);
+  margin: 20px auto;
+  width: 600px;
+}
+
+.towers_game h1{
+  transform: scaleY(-1) translateY(-400px);
+}
+
+
+.towers_grid {
+  width: 200px;
+  height: 400px;
+  float: left;
+  border-top: 10px solid black;
+  position: relative;
+}
+.towers_grid:hover{
+  background: yellow;
+}
+
+.towers_grid:before{
+  position: absolute;
+  width: 10px;
+  background: red;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  top: 0;
+  bottom: 0;
+}
+
+.small, .med, .large{
+  height: 80px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.small{
+  width: 80px;
+  background: orange;
+}
+
+.med{
+  width: 120px;
+  background: green;
+}
+
+.large{
+  width: 180px;
+  background: purple;
+}
+
+.bottom_align{
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+}
